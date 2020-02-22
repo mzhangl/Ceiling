@@ -4,6 +4,7 @@
     "description": "Build an Extension!",
     "permissions": ["activeTab", "declarativeContent", "storage"],
     "background": {
+        "matches": ["*://*.paypal.com/*checkout*"],
         "scripts": ["background.js"],
         "persistent": false
     },
