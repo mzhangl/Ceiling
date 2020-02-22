@@ -1,0 +1,15 @@
+{
+    "name": "Example",
+    "version": "1.0",
+    "description": "Build an Extension!",
+    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "background": {
+        "scripts": ["background.js"],
+        "persistent": false
+    },
+
+    "page_action": {
+        "default_popup": "popup1.html"
+    },
+    "manifest_version": 2
+}
