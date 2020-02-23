@@ -2,15 +2,20 @@
     "name": "Example",
     "version": "1.0",
     "description": "Build an Extension!",
-    "permissions": ["activeTab", "declarativeContent", "storage"],
+    "permissions": ["activeTab", "declarativeContent", "storage", "https://*/*",
+        "http://*/*", "tabs"],
     "background": {
-        //"matches": ["*://*.paypal.com/*checkout*"],
         "scripts": ["background.js"],
         "persistent": false
     },
-
+    "content_scripts": [{
+        "matches": ["*://*.paypal.com/*"],
+        //"css": ["myStyles.css"],
+        "js": ["content.js"]
+    }],
     "page_action": {
         "default_popup": "popup1.html"
     },
+    "web_accessible_resources": ["script.js"],
     "manifest_version": 2
 }
