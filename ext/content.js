@@ -24,4 +24,4 @@ s.onload = function() {
 };
 (document.head || document.documentElement).appendChild(s);
 */
-}, 5000);
+}, 1000);

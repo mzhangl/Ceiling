@@ -21,5 +21,5 @@ function jQueryMain(price_str) {
     console.log("Hello");
     $(".price").append(price_str);
     $(".donate").append(roundPrice(price_str));
-    $("#amnt").value = toString(roundPrice(price_str));
+    $("#amnt").val(String(roundPrice(price_str)));
 }
