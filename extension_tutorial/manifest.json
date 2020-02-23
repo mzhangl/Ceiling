@@ -11,11 +11,11 @@
     "content_scripts": [{
         "matches": ["*://*.paypal.com/*"],
         //"css": ["myStyles.css"],
-        "js": ["content.js"]
+        "js": ["jquery-3.4.1.min.js", "content.js"]
     }],
     "page_action": {
         "default_popup": "popup1.html"
     },
-    "web_accessible_resources": ["script.js"],
+    "web_accessible_resources": ["popup1.html"],
     "manifest_version": 2
 }
