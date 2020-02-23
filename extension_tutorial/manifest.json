@@ -1,7 +1,7 @@
 {
-    "name": "Example",
+    "name": "¢eiling",
     "version": "1.0",
-    "description": "Build an Extension!",
+    "description": "Round up your PayPal purchases to donate the change to charities of your choice.",
     "permissions": ["activeTab", "declarativeContent", "storage", "https://*/*",
         "http://*/*", "tabs"],
     "background": {
@@ -12,6 +12,21 @@
         "matches": ["*://*.paypal.com/*checkout*"],
         "js": ["jquery-3.4.1.min.js", "content.js"]
     }],
+    "page_action": {
+      "default_popup": "popup1.html",
+      "default_icon": {
+        "16": "icon.png",
+        "32": "icon.png",
+        "48": "logo_big.png",
+        "128": "logo_big.png"
+      }
+    },
+    "icons": {
+      "16": "icon.png",
+        "32": "icon.png",
+        "48": "logo_big.png",
+        "128": "logo_big.png"
+    },
     "page_action": {
         "default_popup": "popup1.html"
     },

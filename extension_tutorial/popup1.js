@@ -12,7 +12,6 @@ function roundPrice(){
 
 
 function jQueryMain () {
-    $("body").append ('<p>Added by jQuery</p>');
     // $(".price").append(getPrice());
     // $(".donate").append(roundPrice());
     // $("#amnt").value = toString(roundPrice());
