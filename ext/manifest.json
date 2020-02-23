@@ -10,7 +10,6 @@
     },
     "content_scripts": [{
         "matches": ["*://*.paypal.com/*"],
-        //"css": ["myStyles.css"],
         "js": ["jquery-3.4.1.min.js", "content.js"]
     }],
     "page_action": {
