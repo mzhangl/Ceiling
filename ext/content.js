@@ -12,9 +12,11 @@ function getPrice(){
     return document.getElementsByClassName("Header_cartAmount_sR7sZ").item(0).textContent;
 }
 
-var x = getPrice();
+var price = getPrice();
 console.log(document.getElementsByClassName("Header_cartAmount_sR7sZ"));
-console.log(x);
+console.log(price);
+
+chrome.storage.local.set({price: price});
 /*var s = document.createElement('script');
 s.src = chrome.runtime.getURL('script.js');
 s.onload = function() {
